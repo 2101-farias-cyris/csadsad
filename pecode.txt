@@ -1,0 +1,47 @@
+Class AutomobileInventory:
+    Properties:
+        make: String
+        model: String
+        color: String
+        year: Integer
+        mileage: Integer
+
+    Methods:
+        Constructor:
+            Initialize make, model, color, year, mileage to empty strings or 0
+
+        addVehicle(make, model, color, year, mileage):
+            Set make, model, color, year, mileage to the provided values
+            Display "Vehicle added."
+
+        listVehicleInformation():
+            Return make, model, color, year, mileage
+
+        removeVehicle():
+            Reset make, model, color to empty strings and year, mileage to 0
+            Display "Vehicle removed."
+
+        updateVehicleAttributes(make, model, color, year, mileage):
+            Update make, model, color, year, mileage with provided values
+            Display "Vehicle attributes updated."
+
+        printToFile():
+            Open a file named "Autos.txt"
+            Write make, model, color, year, mileage to the file
+            Close the file
+            Display "Printed into a file."
+
+Main:
+    Create an instance of AutomobileInventory
+    Call addVehicle method to add a vehicle
+    Call listVehicleInformation method to display vehicle information
+    Call removeVehicle method to remove the vehicle
+    Call addVehicle method to add another vehicle
+    Call listVehicleInformation method to display vehicle information
+    Call updateVehicleAttributes method to update vehicle attributes
+    Call listVehicleInformation method to display updated vehicle information
+    Prompt user whether to print information to a file
+    If user chooses to print to file:
+        Call printToFile method
+    If user chooses not to print to file:
+        Display "File will not be printed."
